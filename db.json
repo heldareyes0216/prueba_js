@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Administrador Cine",
+      "email": "admin@test.com",
+      "password": "Admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Juan Perez",
+      "email": "user@test.com",
+      "password": "User123",
+      "role": "user"
+    }
+  ],
+  "spaces": [
+    {
+      "id": "sala-1",
+      "name": "Sala 1",
+      "type": "Sala 2D",
+      "capacity": 50
+    },
+    {
+      "id": "sala-2",
+      "name": "Sala 2",
+      "type": "Sala 3D",
+      "capacity": 55
+    },
+    {
+      "id": "sala-3",
+      "name": "Sala 3",
+      "type": "Sala IMAX",
+      "capacity": 50
+    },
+    {
+      "id": "sala-4",
+      "name": "Sala 4",
+      "type": "Salda VIP",
+      "capacity": 40
+    }
+  ],
+  "reservations": [
+    {
+      "id": "res-101",
+      "userId": "2",
+      "userName": "Juan Perez",
+      "function": "noche",
+      "date": "2026-06-15",
+      "startTime": "08:00",
+      "endTime": "10:00",
+      "status": "Confirmada"
+    },
+    {
+      "id": "res-102",
+      "userId": "2",
+      "userName": "Pepito Hernandez",
+      "function": "tarde",
+      "spaceId": "sp-3",
+      "date": "2026-06-16",
+      "startTime": "14:00",
+      "endTime": "17:00",
+      "status": "Pendiente"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "prueba_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "npx json-server db.json --port 3000",
+    "css": "npx @tailwindcss/cli -i ./src/styles/styles.css -o ./css/output.css --watch",
+    "dev": "npx live-server --port=5500"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}
