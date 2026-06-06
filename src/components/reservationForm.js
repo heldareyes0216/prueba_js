@@ -14,18 +14,14 @@ export const reservationFormComponent = (spaces) => `
             </div>
             <div class="grid grid-cols-2 gap-2">
                 <div>
-                    <label class="block text-xs font-bold text-slate-500 uppercase">Hora Entrada</label>
+                    <label class="block text-xs font-bold text-slate-500 uppercase">Horario</label>
                     <input type="time" id="res-start" required class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-lg text-sm shadow-sm focus:ring-2 focus:ring-indigo-500 outline-none">
                 </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-500 uppercase">Hora Salida</label>
-                    <input type="time" id="res-end" required class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-lg text-sm shadow-sm focus:ring-2 focus:ring-indigo-500 outline-none">
-                </div>
+
+                
+                
             </div>
-            <div>
-                <label class="block text-xs font-bold text-slate-500 uppercase">Motivo / Justificación</label>
-                <textarea id="res-reason" required rows="2" class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-lg text-sm shadow-sm focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Especificar actividad..."></textarea>
-            </div>
+            
             <button type="submit" class="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg text-sm transition-colors shadow">
                 Confirmar Reserva
             </button>

@@ -51,18 +51,11 @@ export const dashboardView = async (container) => {
             const spaceId = document.getElementById('res-space').value;
             const date = document.getElementById('res-date').value;
             const startTime = document.getElementById('res-start').value;
-            const endTime = document.getElementById('res-end').value;
-            const reason = document.getElementById('res-reason').value.trim();
-
-            if (startTime >= endTime) {
-                alert('La hora de inicio debe ser anterior a la hora de salida.');
-                return;
-            }
-
            
-            const hasConflict = validators.checkOverlap(allReservations, spaceId, date, startTime, endTime);
+        
+            const hasConflict = validators.checkOverlap(allReservations, spaceId, date, startTime);
             if (hasConflict) {
-                alert('⚠️ Conflicto detectado: El espacio ya se encuentra reservado en el rango de horario seleccionado.');
+                alert('⚠️ Conflicto detectado: La sala ya se encuentr llena en el rango de horario seleccionado.');
                 return;
             }
 
@@ -72,8 +65,6 @@ export const dashboardView = async (container) => {
                 spaceId,
                 date,
                 startTime,
-                endTime,
-                reason,
                 status: 'Pending'
             };
 

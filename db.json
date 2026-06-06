@@ -63,5 +63,33 @@
       "endTime": "17:00",
       "status": "Pendiente"
     }
-  ]
+  ],
+  "peliculas": [
+    {
+      "id": "pl-1",
+      "nombre": "El diablo viste a la moda",
+      "Type": "Mayores de 7 años"
+    },
+    {
+      "id": "pl-2",
+      "nombre": "obsesión",
+      "Type": "Mayores de 12 años"
+    },
+    {
+      "id": "pl-3",
+      "nombre": "Michael",
+      "Type": "Mayores de 12 años"
+    },
+    {
+      "id": "pl-4",
+      "nombre": "Toy Story 5",
+      "Type": "Para todo público"
+    },
+    {
+      "id": "pl-5",
+      "nombre": "Backrooms",
+      "Type": "Mayores de 12 años"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

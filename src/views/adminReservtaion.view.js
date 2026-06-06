@@ -1,4 +1,4 @@
-import { reservationTableComponent } from '../components/reservationTable.component.js';
+import { reservationTableComponent } from '../components/reservationTable.js';
 
 // Para qué sirve: Define la interfaz exclusiva de supervisión para el administrador.
 export const adminReservationsView = (reservations, spaces, user) => `

@@ -1,5 +1,5 @@
-import { reservationFormComponent } from '../components/reservationForm.component.js';
-import { reservationTableComponent } from '../components/reservationTable.component.js';
+import { reservationFormComponent } from '../components/reservationForm.js';
+import { reservationTableComponent } from '../components/reservationTable.js';
 
 export const myReservationsView = (reservations, spaces, user) => `
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">

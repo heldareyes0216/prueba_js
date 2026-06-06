@@ -11,9 +11,8 @@ export const reservationTableComponent = (reservations, spaces, user) => {
                         <th class="px-6 py-3">Espacio</th>
                         ${user.role === 'admin' ? '<th class="px-6 py-3">Usuario</th>' : ''}
                         <th class="px-6 py-3">Fecha y Horario</th>
-                        <th class="px-6 py-3">Motivo</th>
-                        <th class="px-6 py-3">Estado</th>
-                        <th class="px-6 py-3 text-right">Acciones</th>
+                        <th class="px-6 py-3">Pelicula</th>
+                        <th class="px-6 py-3">Estado</th>   
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-200 text-slate-700">
@@ -27,7 +26,7 @@ export const reservationTableComponent = (reservations, spaces, user) => {
 
                         return `
                             <tr class="hover:bg-slate-50/80 transition-colors">
-                                <td class="px-6 py-4 font-semibold text-slate-800">${space ? space.name : 'N/A'}</td>
+                                <td class="px-6 py-4 font-semibold text-slate-800">${space ? space.name : 'Sala'}</td>
                                 ${user.role === 'admin' ? `<td class="px-6 py-4 text-xs font-medium text-indigo-600">${res.userName}</td>` : ''}
                                 <td class="px-6 py-4 text-xs font-mono">${res.date}<br>${res.startTime} - ${res.endTime}</td>
                                 <td class="px-6 py-4 max-w-xs truncate italic">"${res.reason}"</td>

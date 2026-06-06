@@ -1,7 +1,7 @@
 export const loginFormComponent = () => `
     <form id="form-login" class="space-y-4">
         <div>
-            <label class="block text-sm font-medium text-slate-700">Correo Institucional</label>
+            <label class="block text-sm font-medium text-slate-700">Usuario</label>
             <input type="email" id="login-email" required class="mt-1 block w-full px-3 py-2 border border-slate-300 rounded-lg text-sm shadow-sm focus:ring-2 focus:ring-indigo-500 outline-none">
         </div>
         <div>

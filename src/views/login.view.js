@@ -7,8 +7,8 @@ export const loginView = async (container) => {
         <div class="min-h-screen flex items-center justify-center bg-slate-100 px-4">
             <div class="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 space-y-6">
                 <div class="text-center">
-                    <h2 class="text-2xl font-extrabold text-slate-800">Riwi Workspace Booking</h2>
-                    <p class="text-sm text-slate-500 mt-1">Ingresa tus credenciales autorizadas</p>
+                    <h2 class="text-2xl font-extrabold text-slate-800">CINE RIWI</h2>
+                    <p class="text-sm text-slate-500 mt-1">Ingresa tus credenciales</p>
                 </div>
                 <div id="container-form-login"></div>
             </div>
